@@ -1,6 +1,9 @@
-// const elForm = document.querySelector('.js-form');
-// const elFormTexareaInput = elForm.querySelector('.js-textarea-input');
-// const elFormTexareaOutput = elForm.querySelector('.js-textarea-output');
+const elForm = document.querySelector('.js-form');
+const elFormTexareaInput = elForm.querySelector('.js-input-textarea');
+const elFormTexareaOutput = elForm.querySelector('.js-output-textarea');
+const elRotate = elForm.querySelector(".js-filter");
+
+
 
 function rot (str,rot){
   let arr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
@@ -20,7 +23,6 @@ function rot (str,rot){
 console.log(rot('salom hello',13));
 
 
-
 function decrypt (str,rot){
   let arr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'].reverse('');
   let result = '';
@@ -37,3 +39,15 @@ function decrypt (str,rot){
   return result;
 }
 console.log(decrypt('fnybz uryyb',13));
+
+elForm.addEventListener('submit', evt => {
+  evt.preventDefault();
+});
+
+
+function doRot(evt){
+evt.preventDefault();
+  elFormTexareaOutput.value = rot(elFormTexareaInput.value, Number(elRotate.value))
+}
+
+elFormTexareaInput.addEventListener("keyup", doRot)

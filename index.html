@@ -10,18 +10,55 @@
 </head>
 <body>
 
-  <!-- <div class="container">
+  <div class="container py-5">
     <form class="js-form" action="https://echo.htmlacademy.ru">
       <div class="row">
-        <div class="col-md-6">
-          <textarea class="js-textarea-input form-control" name="text-normal" cols="30" rows="10" placeholder="Enter text"></textarea>
+
+        <div class="col-md-2 mb-sm-4">
+          <select class="js-filter col-md-6 py-3 px-5 mb-3 mb-md-0" name="filter-rotate">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+          </select>
         </div>
-        <div class="col-md-6">
-          <textarea class="js-textarea-output form-control" name="text-sifr" cols="30" rows="10" placeholder="Output "></textarea>
+
+        <div class="col-md-5 mb-sm-4">
+          <div class="d-flex flex-column align-items-end">
+            <textarea class="js-input-textarea input-textarea w-100 border-none py-3 px-5  mb-3"></textarea>
+            <div>
+              <button class="js-btn-clear btn bg-light rounded shadow-sm border-0 mb-3 mb-md-0" type="button">
+                clear
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="d-flex flex-column align-items-end">
+            <textarea
+            class="js-output-textarea output-textarea w-100 w-100 border-none py-3 px-5 mb-3" readonly></textarea>
+            <div>
+
+              <button class="js-btn-copy btn bg-light rounded shadow-sm border-0 mb-sm-3" type="button">
+                copy
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </form>
-  </div> -->
+  </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
