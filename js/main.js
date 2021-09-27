@@ -1,6 +1,6 @@
-const elForm = document.querySelector('.js-form');
-const elFormTexareaInput = elForm.querySelector('.js-textarea-input');
-const elFormTexareaOutput = elForm.querySelector('.js-textarea-output');
+// const elForm = document.querySelector('.js-form');
+// const elFormTexareaInput = elForm.querySelector('.js-textarea-input');
+// const elFormTexareaOutput = elForm.querySelector('.js-textarea-output');
 
 function rot (str,rot){
   let arr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
